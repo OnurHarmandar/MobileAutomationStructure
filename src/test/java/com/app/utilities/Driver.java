@@ -20,8 +20,8 @@ public class Driver {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, platformName);
              caps.setCapability("newCommandTimeout", 300);
-        String userName = "onurharmandar_ePpakM";
-        String accessKey = "8x8R2KkD6xFnk2NsmPBN";
+        String userName = "your username given from browserstack";
+        String accessKey = "your accesskey for browserstack";
 
 
 
@@ -77,8 +77,8 @@ public class Driver {
                 caps.setCapability("project", "My First Project");
                 caps.setCapability("build", "My First Build");
                 caps.setCapability("name", "Bstack-[Java] Sample Test");
-                caps.setCapability(MobileCapabilityType.APP, "bs://0478ffa6c6ac3845090d69793a99ad0ae0d4a9b4");
-                caps.setCapability("browserstack.geoLocation","US");
+                caps.setCapability(MobileCapabilityType.APP, "your application's bs://...");
+                //caps.setCapability("browserstack.geoLocation","US");
                 caps.setCapability("deviceOrientation", "portrait");
                 try {
                     driver = new AndroidDriver<AndroidElement>(new URL("https://"+userName+":"+accessKey+"@hub-cloud.browserstack.com/wd/hub"), caps);
